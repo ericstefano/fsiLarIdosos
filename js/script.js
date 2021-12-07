@@ -18,6 +18,7 @@ const swiper = new Swiper('.swiper', {
     dynamicBullets: true,
   },
 });
+const nav = document.getElementById('nav');
 const navbarTop = document.querySelector('.navbar-top');
 const navbarBottom = document.querySelector('.navbar-bottom');
 const navbarBurger = document.querySelector('.navbar-burger');
@@ -27,14 +28,21 @@ const buttonDoar = document.getElementById('doar');
 const modal = document.getElementById('modal');
 const modalBackground = document.getElementById('modal-background');
 const modalClose = document.getElementById('modal-close');
+const footerLinks = document.getElementById('footer-links');
 
 swiper.on('slideChange', (e) => {
   navbarBurger.classList.remove('is-active');
   navbar.classList.remove('is-active');
-  if (e.activeIndex != 0) {
+  if (e.activeIndex !== 0) {
     navbarTop.classList.add('display-none');
   } else {
     navbarTop.classList.remove('display-none');
+  }
+
+  if (e.activeIndex === 4) {
+    nav.classList.add('display-none');
+  } else {
+    nav.classList.remove('display-none');
   }
 });
 
@@ -61,11 +69,21 @@ modalClose.addEventListener('click', () => {
 });
 
 modalBackground.addEventListener('click', (e) => {
-  console.log(e.target);
   if (e.target === modalBackground) {
     modal.classList.remove('is-active');
   }
 });
 buttonDoar.addEventListener('click', () => {
   modal.classList.add('is-active');
+});
+
+const footerItems = [...footerLinks.children];
+
+footerItems.forEach((anchor, i) => {
+  anchor.addEventListener('click', () => {
+    console.log(anchor);
+    swiper.slideTo(i);
+    navbarBurger.classList.remove('is-active');
+    navbar.classList.remove('is-active');
+  });
 });
