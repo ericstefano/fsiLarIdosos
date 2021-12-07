@@ -7,6 +7,33 @@ html {
   display: none;
 }
 
+.amarelo-brasil {
+  background-color: #ffec00;
+}
+
+.verde-brasil {
+  background-color: #0f7a49;
+  color: white !important;
+}
+
+.verde-claro {
+  background-color: #74bc1c;
+  color: white !important;
+}
+
+.azul-brasil {
+  background-color: #133f8b;
+  color: white !important;
+}
+
+.b-0 {
+  border: 0px;
+}
+
+.br-0 {
+  border-radius: 0px;
+}
+
 .navbar {
   background-color: white;
 }
@@ -87,7 +114,7 @@ html {
   justify-content: center;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url('../images/iniciodesktop.svg');
+  background-image: url('../images/iniciodesktop.jpg');
   background-size: cover;
 }
 
@@ -283,6 +310,14 @@ html {
   z-index: 1000;
 }
 
+.modal-badges {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
 .card:hover .card-content div p {
   transition: 0.4s;
   color: white;
@@ -326,7 +361,7 @@ html {
   }
 
   .section-0 {
-    background-image: url('../images/iniciomobile.svg');
+    background-image: url('../images/iniciomobile.jpg');
   }
 
   .hero-content-0 {
