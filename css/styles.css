@@ -1,0 +1,410 @@
+html {
+  overflow: -moz-scrollbars-none;
+  scrollbar-width: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.navbar {
+  background-color: white;
+}
+
+.navbar-top {
+  padding: 9px 130px;
+  min-height: 61px;
+  border-bottom: 1px solid rgba(240, 241, 242, 1);
+}
+
+.navbar-quick {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-top .navbar-quick li {
+  display: inline-block;
+  color: #00509e;
+  border-right: 1px solid #687693;
+  margin-right: 18px;
+  padding-right: 18px;
+  line-height: 1;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.navbar-bottom {
+  padding: 0px 130px;
+  min-height: 103px;
+}
+
+.navbar-item img {
+  max-height: unset;
+}
+
+.navbar-menu {
+  box-shadow: unset;
+  background: inherit;
+}
+
+.navbar-start {
+  margin: unset;
+}
+
+.navbar-start a {
+  color: #00509e;
+}
+
+.navigation-bar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.box-shadow {
+  box-shadow: 0px 15px 20px -15px rgba(0, 0, 0, 0.5);
+}
+
+.display-none {
+  display: none;
+}
+
+.swiper {
+  height: 100vh;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #00509e;
+}
+
+.section-0 {
+  height: 100%;
+  padding: 0px 0px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url('/images/Frame\ 3.svg');
+  background-size: cover;
+}
+
+.hero-content-0 {
+  margin: 5vh 14vw 0px 6vw;
+}
+
+.title-0 {
+  color: black;
+  font-size: 75px;
+}
+
+.subtitle-0 {
+  color: black;
+  max-width: 50vw;
+  mix-blend-mode: hard-light;
+}
+
+.section-1 {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #f8fcff;
+  padding-top: 20vh;
+  gap: 25px;
+}
+
+.hero-content-1 {
+  padding: 0vh 2vh 0vh 2vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.title-1 {
+  color: black;
+  text-align: center;
+}
+
+.subtitle-1 {
+  text-align: center;
+}
+
+.swiper-container {
+  height: 300px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.swiper-cards {
+  height: 100%;
+  width: 100%;
+}
+
+.marquee-slider {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.marquee-track {
+  display: flex;
+  height: 100%;
+  width: calc(400px * 10);
+  animation: scroll 20s infinite linear;
+}
+
+.marquee-track:hover {
+  animation-play-state: paused;
+}
+
+.marquee-slide {
+  height: 100%;
+  width: 400px;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px,
+    rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0px 20px;
+  gap: 30px;
+  border-radius: 10px;
+  transition: transform 0.2s;
+}
+
+.marquee-slide:hover {
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
+    rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
+
+.section-2 {
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  background-image: url('/images/Frame\ 5.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.hero-content-2 {
+  margin: 30vh 6vw 0vh 30vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.title-2 {
+  color: black;
+  text-align: end;
+}
+
+.text-2 {
+  text-align: end;
+  max-width: 50vw;
+}
+
+.section-3 {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 50px;
+  background-image: url('/images/Frame\ 8.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.hero-content-3 {
+  padding: 0vh 2vh 0vh 2vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.title-3 {
+  color: white;
+  text-align: center;
+}
+
+.subtitle-3 {
+  color: white;
+}
+
+.text-3 {
+  max-width: 50vw;
+  color: white;
+  text-align: center;
+}
+
+.section-4 {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #74bc1c;
+}
+
+.card {
+  transition: 0.4s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  background: #74bc1c;
+  transition: 0.4s;
+  color: white;
+  cursor: default;
+}
+
+.card .card-content div p {
+  transition: 0.4s;
+}
+
+.modal {
+  z-index: 1000;
+}
+
+.card:hover .card-content div p {
+  transition: 0.4s;
+  color: white;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-400px * 5));
+  }
+}
+
+@media (max-width: 1050px) {
+  .logo {
+    padding: 0;
+  }
+
+  .navbar-top {
+    display: none;
+  }
+
+  .navbar-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 0px;
+    min-height: auto;
+    align-items: stretch;
+    justify-content: space-between;
+  }
+
+  .navbar-bottom a {
+    height: unset;
+    margin-left: unset;
+  }
+
+  .navbar-menu {
+    flex-basis: 100%;
+    padding-top: 0;
+  }
+
+  .section-0 {
+    background-image: url('/images/Frame\ 4.svg');
+  }
+
+  .hero-content-0 {
+    margin: 0px 8vw 20vh 8vw;
+  }
+
+  .title-0 {
+    font-size: 65px;
+  }
+
+  .subtitle-0 {
+    max-width: 80vw;
+  }
+}
+
+@media (max-width: 750px) {
+  .hero-content-2 {
+    margin: 15vh 6vw 0vh 14vw;
+  }
+
+  .text-3 {
+    max-width: 80vw;
+  }
+}
+
+@media (max-width: 500px) {
+  .hero-content-0 {
+    margin: 0px 8vw 35vh 8vw;
+  }
+  .title-0 {
+    font-size: 45px;
+  }
+
+  .section-1 {
+    padding-top: 12vh;
+  }
+
+  .section-2 {
+    background-image: url('/images/Frame\ 6.jpg');
+  }
+
+  .hero-content-2 {
+    margin: 18vh 6vw 0vh 14vw;
+  }
+
+  .text-2 {
+    max-width: 70vw;
+  }
+}
+
+@media (max-height: 750px) {
+  .title-0 {
+    font-size: 40px;
+  }
+
+  .hero-content-0 {
+    margin: 0px 6vw 16vh 6vw;
+  }
+}
+
+@media (max-height: 660px) {
+  .title-0 {
+    font-size: 35px;
+  }
+
+  .hero-content-0 {
+    margin: 0px 6vw 2vh 6vw;
+  }
+
+  .hero-content-1 {
+    gap: 0px;
+  }
+
+  .title-1 {
+    font-size: 35px !important;
+  }
+
+  .subtitle-1 {
+    font-size: 1.25rem !important;
+  }
+}
