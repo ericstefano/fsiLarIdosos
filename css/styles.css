@@ -324,7 +324,7 @@ html {
 }
 
 .footer-links {
-  gap: 1rem;
+  gap: 25px;
 }
 
 .footer-links > a {
